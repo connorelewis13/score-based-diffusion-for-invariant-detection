@@ -1,0 +1,286 @@
+Pop:
+Mutant caught in mutants/pop_mutant/pop_mutant_1_test.csv at row 0!
+Violated Rules:
+  - arg0.ptr - return.ptr - 1 == 0
+Index 1 is a mutant: True
+
+Mutant caught in mutants/pop_mutant/pop_mutant_2_test.csv at row 9!
+Violated Rules:
+  - arg0.ptr > return.v16
+  - arg0.v1 >= return.v16
+  - return.v1 >= return.v16
+  - arg0.v11 >= return.v16
+  - return.v11 >= return.v16
+  - arg0.v15 >= return.v16
+  - return.v15 >= return.v16
+  - return.v16 == 0
+Index 2 is a mutant: True
+
+Mutant caught in mutants/pop_mutant/pop_mutant_3_test.csv at row 0!
+Violated Rules:
+  - arg0.ptr - return.ptr - 1 == 0
+Index 3 is a mutant: True
+
+Mutant caught in mutants/pop_mutant/pop_mutant_4_test.csv at row 9!
+Violated Rules:
+  - arg0.ptr > return.v16
+  - arg0.v1 >= return.v16
+  - return.v1 >= return.v16
+  - arg0.v11 >= return.v16
+  - return.v11 >= return.v16
+  - arg0.v15 >= return.v16
+  - return.v15 >= return.v16
+  - return.v16 == 0
+Index 4 is a mutant: True
+
+Mutant caught in mutants/push_mutant/push_mutant_1_test.csv at row 0!
+Violated Rules:
+  - arg0.ptr - return.ptr + 1 == 0
+  - arg0.v1 <= return.v1
+  - arg0.v1 % return.v1 == 0
+Index 1 is a mutant: True
+
+Mutant caught in mutants/push_mutant/push_mutant_2_test.csv at row 2!
+Violated Rules:
+  - return.v16 % orig(arg1) == 0
+Index 2 is a mutant: True
+
+Mutant caught in mutants/push_mutant/push_mutant_3_test.csv at row 13!
+Violated Rules:
+  - return.v1 >= 1
+  - arg0.v16 < return.v1
+Index 3 is a mutant: True
+
+Mutant caught in mutants/push_mutant/push_mutant_4_test.csv at row 0!
+Violated Rules:
+  - arg0.v1 <= return.v1
+  - arg0.v1 % return.v1 == 0
+Index 4 is a mutant: True
+
+projectiles
+Mutant caught in mutants/proj_mutant/projectile_mutant_1_test.csv at row 3!
+Violated Rules:
+  - arg0.angle > return.final_position
+Was Index 1 mutated according to Daikon? True
+
+Was Index 2 mutated according to Daikon? False
+
+Was Index 3 mutated according to Daikon? False
+
+Mutant caught in mutants/proj_mutant/projectile_mutant_4_test.csv at row 3!
+Violated Rules:
+  - arg0.angle > return.time
+Was Index 4 mutated according to Daikon? True
+
+Mutant caught in mutants/proj_mutant/projectile_mutant_5_test.csv at row 33!
+Violated Rules:
+  - arg0.angle > return.max_height
+Was Index 5 mutated according to Daikon? True
+
+Mutant caught in mutants/proj_mutant/projectile_mutant_6_test.csv at row 3!
+Violated Rules:
+  - arg0.angle > return.final_position
+Was Index 6 mutated according to Daikon? True
+
+Was Index 7 mutated according to Daikon? False
+
+Was Index 8 mutated according to Daikon? False
+
+triangles:
+Mutant caught in mutants/tri_mutant/triangle_mutant_1_test.csv at row 0!
+Violated Rules:
+  - (return.angle == 2) ==> (return.type <= return.angle)
+  - (return.angle == 2) ==> (return.type one of { 1, 2 })
+  - (return.type == 3) ==> (return.angle == 1)
+Was this file 1 mutated according to Daikon? True
+
+Was this file 2 mutated according to Daikon? False
+
+Was this file 3 mutated according to Daikon? False
+
+Was this file 4 mutated according to Daikon? False
+
+Was this file 5 mutated according to Daikon? False
+
+Mutant caught in mutants/tri_mutant/triangle_mutant_6_test.csv at row 0!
+Violated Rules:
+  - (return.angle == 3) ==> (return.type < return.angle)
+  - (return.angle == 3) ==> (return.type one of { 1, 2 })
+  - (return.type == 3) ==> (return.angle == 1)
+  - (return.type == 3) ==> (return.type > return.angle)
+Was this file 6 mutated according to Daikon? True
+
+Mutant caught in mutants/tri_mutant/triangle_mutant_7_test.csv at row 0!
+Violated Rules:
+  - (return.angle == 3) ==> (return.type < return.angle)
+  - (return.angle == 3) ==> (return.type one of { 1, 2 })
+  - (return.type == 3) ==> (return.angle == 1)
+  - (return.type == 3) ==> (return.type > return.angle)
+Was this file 7 mutated according to Daikon? True
+
+Was this file 8 mutated according to Daikon? False
+
+
+99th percentile
+============================================================                              
+EVALUATING POP (Summary Mode)
+============================================================
+Clean Test      | Flagged: 62/1000 | Detection Rate: 6.20% | Top Var: Target_Var_10
+Mutant 0        | Flagged: 1000/1000 | Detection Rate: 100.00% | Top Var: Target_Var_0
+Mutant 1        | Flagged: 999/1000 | Detection Rate: 99.90% | Top Var: Target_Var_14
+Mutant 2        | Flagged: 1000/1000 | Detection Rate: 100.00% | Top Var: Target_Var_0
+Mutant 3        | Flagged: 925/1000 | Detection Rate: 92.50% | Top Var: Target_Var_1
+============================================================
+
+99.5th percentile
+============================================================
+EVALUATING POP (Summary Mode)
+============================================================
+Clean Test      | Flagged: 39/1000 | Detection Rate: 3.90% | Top Var: Target_Var_10
+Mutant 0        | Flagged: 1000/1000 | Detection Rate: 100.00% | Top Var: Target_Var_0
+Mutant 1        | Flagged: 998/1000 | Detection Rate: 99.80% | Top Var: Target_Var_14
+Mutant 2        | Flagged: 1000/1000 | Detection Rate: 100.00% | Top Var: Target_Var_0
+Mutant 3        | Flagged: 925/1000 | Detection Rate: 92.50% | Top Var: Target_Var_1
+============================================================
+
+99th percentile
+============================================================
+EVALUATING PUSH (Summary Mode)
+============================================================
+Clean Test      | Flagged: 53/1000 | Detection Rate: 5.30% | Top Var: Target_Var_14
+Mutant 0        | Flagged: 930/1000 | Detection Rate: 93.00% | Top Var: Target_Var_0
+Mutant 1        | Flagged: 985/1000 | Detection Rate: 98.50% | Top Var: Target_Var_1
+Mutant 2        | Flagged: 1000/1000 | Detection Rate: 100.00% | Top Var: Target_Var_1
+Mutant 3        | Flagged: 930/1000 | Detection Rate: 93.00% | Top Var: Target_Var_1
+============================================================
+
+99.5th percentile
+============================================================
+EVALUATING PUSH (Summary Mode)
+============================================================
+Clean Test      | Flagged: 26/1000 | Detection Rate: 2.60% | Top Var: Target_Var_14
+Mutant 0        | Flagged: 930/1000 | Detection Rate: 93.00% | Top Var: Target_Var_0
+Mutant 1        | Flagged: 979/1000 | Detection Rate: 97.90% | Top Var: Target_Var_1
+Mutant 2        | Flagged: 997/1000 | Detection Rate: 99.70% | Top Var: Target_Var_1
+Mutant 3        | Flagged: 930/1000 | Detection Rate: 93.00% | Top Var: Target_Var_1
+============================================================
+
+99th percentile
+============================================================
+EVALUATING PROJECTILE (Summary Mode)
+============================================================
+Clean Test      | Flagged: 69/1000 | Detection Rate: 6.90% | Top Var: Target_Var_0
+Mutant 0        | Flagged: 992/1000 | Detection Rate: 99.20% | Top Var: Target_Var_0
+Mutant 1        | Flagged: 999/1000 | Detection Rate: 99.90% | Top Var: Target_Var_0
+Mutant 2        | Flagged: 715/1000 | Detection Rate: 71.50% | Top Var: Target_Var_0
+Mutant 3        | Flagged: 995/1000 | Detection Rate: 99.50% | Top Var: Target_Var_0
+Mutant 4        | Flagged: 943/1000 | Detection Rate: 94.30% | Top Var: Target_Var_1
+Mutant 5        | Flagged: 69/1000 | Detection Rate: 6.90% | Top Var: Target_Var_0
+Mutant 6        | Flagged: 880/1000 | Detection Rate: 88.00% | Top Var: Target_Var_2
+Mutant 7        | Flagged: 861/1000 | Detection Rate: 86.10% | Top Var: Target_Var_1
+============================================================
+
+99.5th percentile
+============================================================
+EVALUATING PROJECTILE (Summary Mode)
+============================================================
+Clean Test      | Flagged: 51/1000 | Detection Rate: 5.10% | Top Var: Target_Var_0
+Mutant 0        | Flagged: 992/1000 | Detection Rate: 99.20% | Top Var: Target_Var_0
+Mutant 1        | Flagged: 997/1000 | Detection Rate: 99.70% | Top Var: Target_Var_0
+Mutant 2        | Flagged: 690/1000 | Detection Rate: 69.00% | Top Var: Target_Var_0
+Mutant 3        | Flagged: 993/1000 | Detection Rate: 99.30% | Top Var: Target_Var_0
+Mutant 4        | Flagged: 938/1000 | Detection Rate: 93.80% | Top Var: Target_Var_1
+Mutant 5        | Flagged: 51/1000 | Detection Rate: 5.10% | Top Var: Target_Var_0
+Mutant 6        | Flagged: 872/1000 | Detection Rate: 87.20% | Top Var: Target_Var_2
+Mutant 7        | Flagged: 849/1000 | Detection Rate: 84.90% | Top Var: Target_Var_1
+============================================================
+
+99th percentile
+============================================================
+EVALUATING TRIANGLE (Summary Mode)
+============================================================
+Clean Test      | Flagged: 159/1001 | Detection Rate: 15.88% | Top Var: Target_Var_3
+Mutant 0        | Flagged: 1001/1001 | Detection Rate: 100.00% | Top Var: Target_Var_2
+Mutant 1        | Flagged: 578/1001 | Detection Rate: 57.74% | Top Var: Target_Var_0
+Mutant 2        | Flagged: 415/1001 | Detection Rate: 41.46% | Top Var: Target_Var_3
+Mutant 3        | Flagged: 473/1001 | Detection Rate: 47.25% | Top Var: Target_Var_3
+Mutant 4        | Flagged: 666/1001 | Detection Rate: 66.53% | Top Var: Target_Var_3
+Mutant 5        | Flagged: 688/1001 | Detection Rate: 68.73% | Top Var: Target_Var_3
+Mutant 6        | Flagged: 547/1001 | Detection Rate: 54.65% | Top Var: Target_Var_3
+Mutant 7        | Flagged: 666/1001 | Detection Rate: 66.53% | Top Var: Target_Var_3
+============================================================
+
+99.5th percentile
+============================================================
+EVALUATING TRIANGLE (Summary Mode)
+============================================================
+Clean Test      | Flagged: 90/1001 | Detection Rate: 8.99% | Top Var: Target_Var_3
+Mutant 0        | Flagged: 1001/1001 | Detection Rate: 100.00% | Top Var: Target_Var_2
+Mutant 1        | Flagged: 455/1001 | Detection Rate: 45.45% | Top Var: Target_Var_1
+Mutant 2        | Flagged: 328/1001 | Detection Rate: 32.77% | Top Var: Target_Var_3
+Mutant 3        | Flagged: 398/1001 | Detection Rate: 39.76% | Top Var: Target_Var_3
+Mutant 4        | Flagged: 587/1001 | Detection Rate: 58.64% | Top Var: Target_Var_3
+Mutant 5        | Flagged: 663/1001 | Detection Rate: 66.23% | Top Var: Target_Var_3
+Mutant 6        | Flagged: 497/1001 | Detection Rate: 49.65% | Top Var: Target_Var_3
+Mutant 7        | Flagged: 587/1001 | Detection Rate: 58.64% | Top Var: Target_Var_3
+============================================================
+
+
+python diffusion_ks_mutant_tester.py --experiment triangle --id 303 --sigma_min 0.001
+================================================================================
+EVALUATING TRIANGLE (KS-Test vs Validation Set per Noise Level)
+================================================================================
+Clean Test      | Bonferroni Detected: False
+--------------------------------------------------------------------------------
+Mutant 1        | Bonferroni Detected: True
+Mutant 2        | Bonferroni Detected: True
+Mutant 3        | Bonferroni Detected: True
+Mutant 4        | Bonferroni Detected: True
+Mutant 5        | Bonferroni Detected: True
+Mutant 6        | Bonferroni Detected: True
+Mutant 7        | Bonferroni Detected: True
+Mutant 8        | Bonferroni Detected: True
+================================================================================
+
+Saved detailed summary to: ks_test_results/kstest_detailed_triangle_id303.csv
+
+
+python diffusion_ks_mutant_tester.py --experiment pop --id 301                       
+================================================================================
+EVALUATING POP (KS-Test vs Validation Set per Noise Level)
+================================================================================
+Clean Test      | Bonferroni Detected: False
+--------------------------------------------------------------------------------
+Mutant 1        | Bonferroni Detected: True
+Mutant 2        | Bonferroni Detected: True
+Mutant 3        | Bonferroni Detected: True
+Mutant 4        | Bonferroni Detected: True
+================================================================================
+
+python diffusion_ks_mutant_tester.py --experiment push --id 302
+================================================================================
+EVALUATING PUSH (KS-Test vs Validation Set per Noise Level)
+================================================================================
+Clean Test      | Bonferroni Detected: False
+--------------------------------------------------------------------------------
+Mutant 1        | Bonferroni Detected: True
+Mutant 2        | Bonferroni Detected: True
+Mutant 3        | Bonferroni Detected: True
+Mutant 4        | Bonferroni Detected: True
+================================================================================
+
+python diffusion_ks_mutant_tester.py --experiment projectile --id 300
+================================================================================
+EVALUATING PROJECTILE (KS-Test vs Validation Set per Noise Level)
+================================================================================
+Clean Test      | Bonferroni Detected: False
+--------------------------------------------------------------------------------
+Mutant 1        | Bonferroni Detected: True
+Mutant 2        | Bonferroni Detected: True
+Mutant 3        | Bonferroni Detected: True
+Mutant 4        | Bonferroni Detected: True
+Mutant 5        | Bonferroni Detected: True
+Mutant 6        | Bonferroni Detected: False
+Mutant 7        | Bonferroni Detected: True
+Mutant 8        | Bonferroni Detected: True
+================================================================================

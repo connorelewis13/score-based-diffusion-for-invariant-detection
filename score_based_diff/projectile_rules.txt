@@ -1,0 +1,23 @@
+===========================================================================
+project.projectile_motion:::OBJECT
+this has only one value
+===========================================================================
+project.projectile_motion.proj_motion_simulator(project.ProjectileInput):::ENTER
+arg0 != null
+arg0.v0 != arg0.angle
+===========================================================================
+project.projectile_motion.proj_motion_simulator(project.ProjectileInput):::EXIT
+arg0.v0 == orig(arg0.v0)
+arg0.angle == orig(arg0.angle)
+return != null
+return.final_position != 0
+arg0.v0 != arg0.angle
+arg0.v0 > return.time
+arg0.v0 > return.max_height
+arg0.v0 != return.final_position
+arg0.angle > return.time
+arg0.angle > return.max_height
+arg0.angle > return.final_position
+return.time != return.max_height
+return.time != return.final_position
+return.max_height != return.final_position

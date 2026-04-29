@@ -1,0 +1,34 @@
+pop
+1: removed stack pointer decrement
+2: removed setting of poppped value to 0
+3: increase stack pointer by 1 instead of decreasing
+4: set 1's value to 0 instead to input.ptr's value to 0
+
+push
+1: always set pointer to 1
+2: always push 1
+3: don't add pushed value
+4: always push the value to the first index
+
+
+projectiles
+1: remove degrees to radians conversion
+2: make g -9.81 instead of 9.81
+3: simplify g to 10 from 9.81
+4: flipped sin to cos in time
+5: flipped sin to cos in max height
+6: flipped sin to cos in final position
+7: changed v0^2 to v0 in final position
+8: changed v0^2 to v0 * 2 in max height
+
+triangles:
+1: changed epsilon for right triangle classificaiton to 1e6 instead of 1e-6
+2: swapped isosceles with scalene classificaiton
+3: changed 2(right triangle) to acute as a hard one
+4: removed sorting of sides to determine hypotenuse
+5: multiplied side squares instead of adding in sum of squares
+6: swapped acute and obtuse classificaiton
+7: multiplied sides by 2 instead of squaring in sum of squares
+8: assume sorted sides array is descending order instead of ascending order
+
+

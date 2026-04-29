@@ -1,0 +1,7 @@
+PPT_NAME project.triangles.triangle_classifier(project.TriangleInput)
+return.type == 1
+return.type == 2
+return.type == 3
+return.angle == 1
+return.angle == 2
+return.angle == 3

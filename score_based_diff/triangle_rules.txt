@@ -1,0 +1,143 @@
+===========================================================================
+project.triangles:::OBJECT
+this has only one value
+===========================================================================
+project.triangles.triangle_classifier(project.TriangleInput):::ENTER
+arg0 != null
+===========================================================================
+project.triangles.triangle_classifier(project.TriangleInput):::EXIT
+arg0.a == orig(arg0.a)
+arg0.b == orig(arg0.b)
+arg0.c == orig(arg0.c)
+(return.angle == 1)  ==>  (return.type >= return.angle)
+(return.angle == 1)  ==>  (return.type one of { 1, 2, 3 })
+(return.angle == 2)  ==>  (return.type <= return.angle)
+(return.angle == 2)  ==>  (return.type one of { 1, 2 })
+(return.angle == 3)  ==>  (return.type < return.angle)
+(return.angle == 3)  ==>  (return.type one of { 1, 2 })
+(return.angle one of { 1, 2 })  ==>  (return.type one of { 1, 2, 3 })
+(return.angle one of { 1, 3 })  ==>  (return.type one of { 1, 2, 3 })
+(return.angle one of { 2, 3 })  ==>  (return.type <= return.angle)
+(return.angle one of { 2, 3 })  ==>  (return.type one of { 1, 2 })
+(return.type == 1)  ==>  (return.type <= return.angle)
+(return.type == 3)  ==>  (arg0.a == arg0.b)
+(return.type == 3)  ==>  (arg0.a == arg0.c)
+(return.type == 3)  ==>  (return.angle == 1)
+(return.type == 3)  ==>  (return.type > return.angle)
+(return.type one of { 1, 2 })  ==>  (return.angle one of { 1, 2, 3 })
+return != null
+return.type one of { 1, 2, 3 }
+return.angle one of { 1, 2, 3 }
+===========================================================================
+project.triangles.triangle_classifier(project.TriangleInput):::EXIT;condition="return.type == 1"
+return.type == 1
+return.type <= return.angle
+===========================================================================
+project.triangles.triangle_classifier(project.TriangleInput):::EXIT;condition="not(return.type == 1)"
+return.type one of { 2, 3 }
+===========================================================================
+project.triangles.triangle_classifier(project.TriangleInput):::EXIT;condition="return.type == 2"
+arg0.a == orig(arg0.a)
+arg0.b == orig(arg0.b)
+arg0.c == orig(arg0.c)
+return != null
+return.type == 2
+return.angle one of { 1, 2, 3 }
+orig(this) has only one value
+orig(arg0) != null
+===========================================================================
+project.triangles.triangle_classifier(project.TriangleInput):::EXIT;condition="not(return.type == 2)"
+arg0.a == orig(arg0.a)
+arg0.b == orig(arg0.b)
+arg0.c == orig(arg0.c)
+return != null
+return.type one of { 1, 3 }
+return.angle one of { 1, 2, 3 }
+orig(this) has only one value
+orig(arg0) != null
+===========================================================================
+project.triangles.triangle_classifier(project.TriangleInput):::EXIT;condition="return.type == 3"
+arg0.a == arg0.b
+arg0.a == arg0.c
+arg0.a == orig(arg0.a)
+arg0.a == orig(arg0.b)
+arg0.a == orig(arg0.c)
+return != null
+return.type == 3
+return.angle == 1
+orig(this) has only one value
+orig(arg0) != null
+===========================================================================
+project.triangles.triangle_classifier(project.TriangleInput):::EXIT;condition="not(return.type == 3)"
+arg0.a == orig(arg0.a)
+arg0.b == orig(arg0.b)
+arg0.c == orig(arg0.c)
+return != null
+return.type one of { 1, 2 }
+return.angle one of { 1, 2, 3 }
+orig(this) has only one value
+orig(arg0) != null
+===========================================================================
+project.triangles.triangle_classifier(project.TriangleInput):::EXIT;condition="return.angle == 1"
+arg0.a == orig(arg0.a)
+arg0.b == orig(arg0.b)
+arg0.c == orig(arg0.c)
+return != null
+return.type one of { 1, 2, 3 }
+return.angle == 1
+orig(this) has only one value
+orig(arg0) != null
+return.type >= return.angle
+===========================================================================
+project.triangles.triangle_classifier(project.TriangleInput):::EXIT;condition="not(return.angle == 1)"
+arg0.a == orig(arg0.a)
+arg0.b == orig(arg0.b)
+arg0.c == orig(arg0.c)
+return != null
+return.type one of { 1, 2 }
+return.angle one of { 2, 3 }
+orig(this) has only one value
+orig(arg0) != null
+return.type <= return.angle
+===========================================================================
+project.triangles.triangle_classifier(project.TriangleInput):::EXIT;condition="return.angle == 2"
+arg0.a == orig(arg0.a)
+arg0.b == orig(arg0.b)
+arg0.c == orig(arg0.c)
+return != null
+return.type one of { 1, 2 }
+return.angle == 2
+orig(this) has only one value
+orig(arg0) != null
+return.type <= return.angle
+===========================================================================
+project.triangles.triangle_classifier(project.TriangleInput):::EXIT;condition="not(return.angle == 2)"
+arg0.a == orig(arg0.a)
+arg0.b == orig(arg0.b)
+arg0.c == orig(arg0.c)
+return != null
+return.type one of { 1, 2, 3 }
+return.angle one of { 1, 3 }
+orig(this) has only one value
+orig(arg0) != null
+===========================================================================
+project.triangles.triangle_classifier(project.TriangleInput):::EXIT;condition="return.angle == 3"
+arg0.a == orig(arg0.a)
+arg0.b == orig(arg0.b)
+arg0.c == orig(arg0.c)
+return != null
+return.type one of { 1, 2 }
+return.angle == 3
+orig(this) has only one value
+orig(arg0) != null
+return.type < return.angle
+===========================================================================
+project.triangles.triangle_classifier(project.TriangleInput):::EXIT;condition="not(return.angle == 3)"
+arg0.a == orig(arg0.a)
+arg0.b == orig(arg0.b)
+arg0.c == orig(arg0.c)
+return != null
+return.type one of { 1, 2, 3 }
+return.angle one of { 1, 2 }
+orig(this) has only one value
+orig(arg0) != null

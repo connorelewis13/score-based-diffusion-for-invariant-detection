@@ -1,0 +1,14 @@
+java daikon.Chicory --ppt-select-pattern="pop_stack" --nesting-depth=2 --std-visibility project.pop_data
+java daikon.Chicory --ppt-select-pattern="push_stack" --nesting-depth=2 --std-visibility project.push_data
+java daikon.Chicory --ppt-select-pattern="proj_motion_simulator" --nesting-depth=2 --std-visibility project.projectile_data
+java daikon.Chicory --ppt-select-pattern="triangle_classifier" --nesting-depth=2 --std-visibility project.triangle_data
+
+java daikon.Daikon triangle_data.dtrace.gz project/triangle.spinfo
+java daikon.Daikon projectile_data.dtrace.gz
+java daikon.Daikon push_data.dtrace.gz
+java daikon.Daikon pop_data.dtrace.gz
+
+java daikon.Daikon pop_data.dtrace.gz
+java daikon.Daikon push_data.dtrace.gz
+java daikon.Daikon projectile_data.dtrace.gz
+java daikon.Daikon triangle_data.dtrace.gz project/triangle.spinfo
